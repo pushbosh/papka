@@ -1,20 +1,51 @@
-.Button{
-    min-width: 150px;
-    background-color: #b601b6;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    height: 40px;
-    font-size: 18px;
-    color: white;
-}
 .my-button{
     min-width: 150px;
-    background-color: #b601b6;
-    border: none;
     border-radius: 10px;
     cursor: pointer;
+    
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
     height: 40px;
     font-size: 18px;
+    transition: background-color 200ms ease-in-out;
+}
+
+.my-button--primary{
     color: white;
-} 
+    background-color: #b601b6;
+    border: none;
+}
+
+.my-button--bordered{
+    border: 1px solid black;
+    color: #b601b6;
+    background: none;
+}
+.my-button--primary:hover{
+    background: #7c027c;
+}
+.my-button--bordered:hover{
+    background: #b601b6;
+    color: white;
+}
+
+.my-button--sm{
+    min-width: 80px;
+    border-radius: 8px;
+    cursor: pointer;
+    
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+    height: 20px;
+    font-size: small;
+    transition: background-color 200ms ease-in-out;
+}
+
+.my-button--lg{
+    min-width: 200px;
+    border-radius: 10px;
+    cursor: pointer;
+    
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+    height: 50px;
+    font-size: large;
+    transition: background-color 200ms ease-in-out;
+}
